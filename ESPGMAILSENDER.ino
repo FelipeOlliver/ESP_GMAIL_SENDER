@@ -59,7 +59,7 @@ void setup()
     Serial.begin(115200);
     connection_state = WiFiConnect();
     if(!connection_state)  // Se não estiver conectado ao WIFI
-        Awaits();          // Constatemente buscando conexão
+        Awaits();          // Constantemente buscando conexão
 
     Gsender *gsender = Gsender::Instance();    
      
